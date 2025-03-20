@@ -1,0 +1,155 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Lists, Images, Tables & Forms</title>
+</head>
+<body>
+
+    <!-- HTML Lists Section -->
+    <h1>HTML Lists</h1>
+
+    <!-- Ordered List with Roman Numerals -->
+    <h3>Ordered Lists</h3>
+    <ol type="I" start="5">
+        <li>Software Engineering</li>
+        <li>Web Development</li>
+        <li>Python</li>
+        <li>Database</li>
+        <li>Startup Building</li>
+    </ol>
+
+    <!-- Unordered List with Circle style -->
+    <h3>Un-ordered Lists</h3>
+    <ul style="list-style-type:circle;">
+        <li>Mr. Chakin</li>
+        <li>Miss. Susan</li>
+        <li>Mr. Eddy</li>
+        <li>Mr. Gerald</li>
+        <li>Miss. Nelly</li>
+    </ul>
+
+    <!-- Definition List -->
+    <h3>Definition Lists</h3>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Hyper Text Markup Language</dd>
+        <dt>SQL</dt>
+        <dd>Structured Query Language</dd>
+    </dl>
+
+    <!-- HTML Images Section -->
+    <h1>HTML Images</h1>
+    <!-- Assuming the image is from Pexels. Here's an external URL for demonstration -->
+    <img src="https://images.pexels.com/photos/2541462/pexels-photo-2541462.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Landscape" width="250" height="350">
+    
+    <!-- Table of 5 Contacts -->
+    <h1>HTML Table of Contacts</h1>
+    <table border="1" cellpadding="10" style="border-collapse: collapse;">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Address</th>
+                <th>Mobile</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Eddy</td>
+                <td>eddy@powerlearnprojectafrica.org</td>
+                <td>123 Nairobi Street, Kenya</td>
+                <td>(123) 456-7890</td>
+            </tr>
+            <tr>
+                <td>Jane</td>
+                <td>jane@company.com</td>
+                <td>456 Eldoret Road, Kenya</td>
+                <td>(234) 567-8901</td>
+            </tr>
+            <tr>
+                <td>Sam</td>
+                <td>sam@business.com</td>
+                <td>789 Kisumu Ave, Kenya</td>
+                <td>(345) 678-9012</td>
+            </tr>
+            <tr>
+                <td>Mary</td>
+                <td>mary@developer.com</td>
+                <td>321 Mombasa Road, Kenya</td>
+                <td>(456) 789-0123</td>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>john@startup.com</td>
+                <td>654 Moi Avenue, Kenya</td>
+                <td>(567) 890-1234</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+<!-- Multimedia Section -->
+<h1>HTML Multimedia</h1>
+
+<!-- Audio Element -->
+<h3>Audio Player</h3>
+<audio controls>
+    <source src="C:\Users\user\AppData\Local\Temp\Rar$DIa16280.37976\AXIS1128_14_Masquerade_60.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+<br><br>
+
+<!-- Video Element from Pexels -->
+<h3>Video Player</h3>
+<video width="640" height="360" controls>
+    <source src=" https://videos.pexels.com/video-files/31121201/13297408_1920_1080_60fps.mp4" type="video/mp4">
+    Your browser does not support the video element.
+</video>
+<br><br>
+
+    <!-- HTML Forms Section -->
+    <h1>HTML Forms</h1>
+    <form action="" method="POST">
+        <!-- Name Field -->
+        <label for="student_name">Name:</label>
+        <input type="text" id="student_name" name="student_name" placeholder="Enter your full name" required>
+        <br><br>
+
+        <!-- Gender Radio Buttons -->
+        <label for="gender">Gender:</label>
+        <input type="radio" id="female" name="gender" value="female" required> Female
+        <input type="radio" id="male" name="gender" value="male" required> Male
+        <br><br>
+
+        <!-- Hobbies Checkboxes -->
+        <label for="hobbies">Hobbies:</label><br>
+        <input type="checkbox" name="hobbies" value="sports"> Sports
+        <input type="checkbox" name="hobbies" value="music"> Music
+        <input type="checkbox" name="hobbies" value="art"> Art
+        <input type="checkbox" name="hobbies" value="travel"> Travel
+        <br><br>
+
+        <!-- Country Dropdown -->
+        <label for="country">Country:</label>
+        <select name="country" id="country" required>
+            <option value="">--Select Country--</option>
+            <option value="Nigeria">Nigeria</option>
+            <option value="Namibia">Namibia</option>
+            <option value="Rwanda">Rwanda</option>
+        </select>
+        <br><br>
+
+        <!-- Description Field -->
+        <label for="description">Describe yourself:</label>
+        <textarea id="description" name="description" placeholder="Tell us about yourself" required></textarea>
+        <br><br>
+
+        <!-- Submit Button -->
+        <button type="submit">Register</button>
+        <input type="reset" value="Cancel">
+    </form>
+
+</body>
+</html>
